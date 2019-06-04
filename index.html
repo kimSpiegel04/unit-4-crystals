@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
     <h1 class='heading'>Crystals Collector!</h1>
@@ -16,16 +18,18 @@
     </div>
     <div id='targetNumber'></div>
     <div id='score'>
-        <p>Wins: 0</p>
-        <p>Losses: 0</p>
+        <p>Wins: <span id='winner'>0</span></p>
+        <p>Losses: <span id='loser'>0</span></p>
     </div>
     <div id='crystals'>
-        <!-- image one -->
-        <!-- image two -->
-        <!-- image three -->
-        <!-- image four -->
+        <img src="assets/images/green-gem.jpg" alt="" id='green'>
+        <img src="assets/images/yellow-gem.jpg" alt="" id='yellow'>
+        <img src="assets/images/blue-gem.jpg" alt="" id='blue'>
+        <img src="assets/images/purple-gem.jpg" alt="" id='purple'>
     </div>
     <p id='finalTitle' class='green'>Your final score is:</p>
     <p id='addUp' class='green'>0</p>
+
+    <script src='assets/javascript/javascript.js'></script>
 </body>
 </html>
