@@ -1,9 +1,90 @@
+body{
+    background-color: #99ddcc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 img{
     float: left;
-    width: 170px;
-    padding-left: 10px;
+    width: 150px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#crystals{
+    clear: both;
+}
+
+.heading{
+    background-color: #35013f;
+    color: #99ddcc;
+    width: 330px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.content {
+    background-color: #b643cd;
+    color: #99ddcc;
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    width: 480px;
+}
+
+#targetNumber, #score {
+    background-color: #ff5da2;
+    color: #99ddcc;
+}
+
+#targetNumber{
+    float: left;
+    width: 200px;
+    height: 85px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+#score{
+    margin-left: 250px;
+    width: 200px;
+    height: 100px;
+    padding-left: 15px;
+    font-weight: bolder;
+}
+
+.collapsible {
+    background-color: #b643cd;
+    color: #99ddcc;
+    cursor: pointer;
+    padding: 18px;
+    width: 500px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.active, .collapsible:hover {
+    background-color: rgba(85, 85, 85, 0.568)3cd;
+}
+
+.scoreBlock {
+    clear: both;
+    border-top: 50px;
 }
 
 .green{
     clear: both;
+    background-color: #35013f;
+    color: #99ddcc;
+    width: 330px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#addUp{
+    font-size: 30px;
 }

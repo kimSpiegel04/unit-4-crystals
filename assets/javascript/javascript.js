@@ -73,11 +73,13 @@ function checkScore(){
         console.log('win');
         wins++;
         $('#winner').html(wins);
+        $('#result').html('You win!');
         reset();
     } else if(currentScore>randomNumber){
         console.log('loss');
         losses++;
         $('#loser').html(losses);
+        $('#result').html('You lose.');
         reset();
     }
 }
@@ -90,4 +92,19 @@ function reset(){
     blueNumber=getBlueNumber(1,12);
     purpleNumber=getPurpleNumber(1,12);
     currentScore=0;
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
 }

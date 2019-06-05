@@ -10,24 +10,31 @@
 </head>
 <body>
     <h1 class='heading'>Crystals Collector!</h1>
-    <div class='instructions'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim neque culpa blanditiis dolorum reiciendis saepe necessitatibus ullam tempore reprehenderit?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate laborum facilis qui voluptates tempora quod consectetur id! Quaerat ducimus quidem commodi iure quisquam voluptatum possimus nihil animi? Non, illum quidem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, illum!</p>
+    <button class="collapsible"><b>Open Instructions</b></button>
+    <div class='content'>
+        <p><b>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</b></p>
     </div>
-    <div id='targetNumber'></div>
-    <div id='score'>
-        <p>Wins: <span id='winner'>0</span></p>
-        <p>Losses: <span id='loser'>0</span></p>
+
+    <div class='scoreBlock'>
+        <div id='targetNumber'></div>
+        <div id='score'>
+            <span id='result'></span>
+            <p>Wins: <span id='winner'>0</span></p>
+            <p>Losses: <span id='loser'>0</span></p>
+        </div>
     </div>
+
     <div id='crystals'>
         <img src="assets/images/green-gem.jpg" alt="" id='green'>
         <img src="assets/images/yellow-gem.jpg" alt="" id='yellow'>
         <img src="assets/images/blue-gem.jpg" alt="" id='blue'>
         <img src="assets/images/purple-gem.jpg" alt="" id='purple'>
     </div>
-    <p id='finalTitle' class='green'>Your final score is:</p>
+    <p id='finalTitle' class='green'>Your current score is:</p>
     <p id='addUp' class='green'>0</p>
 
     <script src='assets/javascript/javascript.js'></script>
